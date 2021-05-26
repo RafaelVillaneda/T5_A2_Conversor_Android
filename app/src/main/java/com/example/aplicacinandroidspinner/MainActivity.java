@@ -73,10 +73,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 if(spinerConvertir.getSelectedItemId()==1){
                     double cantidadC=Double.parseDouble(cajaPrimerNumero.getText().toString());
                     double res=calculos.celsiusAFahrenheit(cantidadC);
-                    cajaRes.setText(df.format(String.valueOf(res)));
+                    cajaRes.setText(df.format(res));
                 }else if(spinerConvertir.getSelectedItemId()==2){
                     double cantidadC=Double.parseDouble(cajaPrimerNumero.getText().toString());
-                    cajaRes.setText(df.format(String.valueOf(cantidadC+273.15)));
+                    cajaRes.setText(df.format(cantidadC+273.15));
                 }
             }else if(spinnerOperaciones.getSelectedItem().toString().equals("F°")){
                 if(spinerConvertir.getSelectedItemId()==1){
@@ -90,9 +90,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 }
             }else if (spinnerOperaciones.getSelectedItem().toString().equals("K°")){
                 if(spinerConvertir.getSelectedItemId()==1){
-
+                    double cantidadK=Double.parseDouble(cajaPrimerNumero.getText().toString());
+                    cajaRes.setText(df.format(cantidadK-273.15));
                 }else if(spinerConvertir.getSelectedItemId()==2){
-
+                    double cantidadK=Double.parseDouble(cajaPrimerNumero.getText().toString());
+                    double res=((cantidadK-273)*1.8000)+32;
+                    cajaRes.setText(df.format(res));
                 }
             }
 
