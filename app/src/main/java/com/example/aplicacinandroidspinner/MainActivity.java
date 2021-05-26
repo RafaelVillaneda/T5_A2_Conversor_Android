@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         spinerConvertir.setOnItemSelectedListener(this);
         cajaPrimerNumero=findViewById(R.id.CajaNumeroIngresado);
         cajaRes=findViewById(R.id.cajaResultado);
-
+        cajaRes.setEnabled(false);
     }
 
     @Override
