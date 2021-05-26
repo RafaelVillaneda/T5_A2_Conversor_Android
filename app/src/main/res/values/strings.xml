@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Aplicación ANDROID [Spinner]</string>
+    <string name="lbl_Convertir">Convertir:</string>
+
+    <string-array name="Converciones">
+        <item>Selecciona operacion...</item>
+        <item>  C°  </item>
+        <item>  F°  </item>
+        <item>  K°  </item>
+    </string-array>
+
+    <string-array name="ConvercionesSinC">
+        <item>Selecciona operacion...</item>
+        <item>  F°  </item>
+        <item>  K°  </item>
+    </string-array>
+    <string-array name="ConvercionesSinF">
+        <item>Selecciona operacion...</item>
+        <item>  F°  </item>
+        <item>  K°  </item>
+    </string-array>
+    <string-array name="ConvercionesSinK">
+        <item>Selecciona operacion...</item>
+        <item>  C°  </item>
+        <item>  F°  </item>
+    </string-array>
+
+    <string name="lb_A">A:</string>
+    <string name="lb_Igual">=</string>
+
+
+</resources>
